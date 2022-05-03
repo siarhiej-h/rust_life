@@ -1,4 +1,4 @@
-import * as wasm from './wasm_game_of_life_bg.wasm';
+import * as wasm from 'wasm_game_of_life_bg.wasm';
 
 const heap = new Array(32).fill(undefined);
 
