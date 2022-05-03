@@ -1,6 +1,6 @@
 import { memory } from "wasm-game-of-life/wasm_game_of_life_bg.wasm";
 import { Universe, Cell, StartMode } from "wasm-game-of-life";
-import Stats from "stats.module";
+import Stats from "./stats.module";
 
 const GRID_COLOR = "#CCCCCC";
 const DEAD_COLOR = "#FFFFFF";
