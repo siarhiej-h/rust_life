@@ -10,7 +10,7 @@
 </head>
 
 <body>
-	<header>
+    <header>
       <div class="lifeContent">
         <div>
           <select id="lifeStartDropDown">
@@ -26,7 +26,7 @@
           <button id="lifeResetButton" class="lifeControlButton" type="button" hidden>Reset life simulation</button>
         </form>
         <div class="gliderMode">
-          <input type="checkbox" id="gliderModeCheckbox" value=@IsGlider @onchange=OnGliderModeValueChange>
+          <input type="checkbox" id="gliderModeCheckbox">
           <label class="gliderModeLabel" for="gliderModeCheckbox">
             <span class="gliderModeInner"></span>
           </label>
@@ -37,29 +37,28 @@
                   <input type="radio"
                          class="gliderDirectionRadio"
                          name="gliderDirection"
-                         value="@GliderDirection.UpLeft">
+                         value="UpLeft">
                   <span class="gliderDirectionBox"></span>
               </label>
               <label class="gliderDirectionLabel">
                   <input type="radio"
                          class="gliderDirectionRadio"
                          name="gliderDirection"
-                         value="@GliderDirection.UpRight"
-                         checked="true">
+                         value="UpRight">
                   <span class="gliderDirectionBox"></span>
               </label>
               <label class="gliderDirectionLabel">
                   <input type="radio"
                          class="gliderDirectionRadio"
                          name="gliderDirection"
-                         value="@GliderDirection.DownLeft">
+                         value="DownLeft">
                   <span class="gliderDirectionBox"></span>
               </label>
               <label class="gliderDirectionLabel">
                   <input type="radio"
                          class="gliderDirectionRadio"
                          name="gliderDirection"
-                         value="@GliderDirection.DownRight">
+                         value="DownRight">
                   <span class="gliderDirectionBox"></span>
               </label>
           </div>
