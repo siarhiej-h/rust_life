@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Hello wasm-pack!</title>
+    <link rel="stylesheet" href="app.css">
+  </head>
+  <body>
+    <header>
+      <div class="lifeContent">
+        <div>
+          <select id="lifeStartDropDown">
+              <option value=Random>Random (10% alive)</option>
+              <option value=Blank>Blank</option>
+          </select>
+        </div>
+        <h2 id="lifeText" hidden></h2>
+        <form class="lifeForm" action="javascript:void(0);">
+          <button id="lifeStartButton" class="lifeControlButton">Start life simulation</button>
+          <button id="lifeStopButton" class="lifeControlButton lifeStarted" type="button" hidden>Stop life simulation</button>
+          <button id="lifeResumeButton" class="lifeControlButton" type="button" hidden>Resume life simulation</button>
+          <button id="lifeResetButton" class="lifeControlButton" type="button" hidden>Reset life simulation</button>
+        </form>
+        <div class="gliderMode">
+          <input type="checkbox" id="gliderModeCheckbox">
+          <label class="gliderModeLabel" for="gliderModeCheckbox">
+            <span class="gliderModeInner"></span>
+          </label>
+        </div>
+        <div>
+          <div class="gliderDirection">
+              <label class="gliderDirectionLabel">
+                  <input type="radio"
+                         class="gliderDirectionRadio"
+                         name="gliderDirection"
+                         value="UpLeft">
+                  <span class="gliderDirectionBox"></span>
+              </label>
+              <label class="gliderDirectionLabel">
+                  <input type="radio"
+                         class="gliderDirectionRadio"
+                         name="gliderDirection"
+                         value="UpRight">
+                  <span class="gliderDirectionBox"></span>
+              </label>
+              <label class="gliderDirectionLabel">
+                  <input type="radio"
+                         class="gliderDirectionRadio"
+                         name="gliderDirection"
+                         value="DownLeft">
+                  <span class="gliderDirectionBox"></span>
+              </label>
+              <label class="gliderDirectionLabel">
+                  <input type="radio"
+                         class="gliderDirectionRadio"
+                         name="gliderDirection"
+                         value="DownRight">
+                  <span class="gliderDirectionBox"></span>
+              </label>
+          </div>
+        </div>
+      </div>
+    </header>
+    <input type="range" min="1" max="49" step="2" id="lifeSlider">
+    <canvas id="lifeCanvas"></canvas>
+    <script src='./bootstrap.js'></script>
+  </body>
+</html>
