@@ -5,8 +5,10 @@ export function initGliderControls() {
     const gliderRadioBoxes = document.getElementsByClassName("gliderDirectionRadio");    
 
     for (let box of gliderRadioBoxes) {
-        box.setAttribute("checked", box.value === initValue);
-        box.checked = box.value === initValue;
+        if (box.value === initValue) {
+            box.setAttribute("checked", true);
+            box.checked;
+        }
     }
 
     const gliderDirectionSub$ = new BehaviorSubject(initValue);
